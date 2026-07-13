@@ -373,7 +373,7 @@ h4 {
   display: flex;
   gap: 4px;
   color: var(--amber);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
 }
 .testimonial-text {
   font-size: 0.97rem;

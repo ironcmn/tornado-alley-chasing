@@ -9,7 +9,6 @@ export const intro = {
 };
 
 export const ticker = [
-  "500+ Tornado Intercepts",
   "Chase Season: May to July",
   "From $150 Per Day",
   "Max 3 Guests Per Trip",
@@ -22,22 +21,20 @@ export const ticker = [
 export const heroIntro = {
   badge: "Active Since 2015 · Est. Colorado",
   heading: ["You're Not", "A Tourist.", "You're The Team."],
-  body: "Chase real tornadoes alongside David Williams, 20+ years of experience, maximum three guests, and a philosophy built on partnership not performance. This is your storm too.",
-  steps: ["Email David", "Short video call", "Plan your chase"],
+  body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership not performance. This is your storm too.",
+  steps: ["Email Me", "Short video call", "Plan your chase"],
   stats: [
     { value: "20+", label: "Years Chasing" },
     { value: "$150", label: "Per Day, All-In", accent: true },
     { value: "3", label: "Max Guests" },
-    { value: "500+", label: "Tornado Intercepts" },
   ],
 };
 
 export const experience = {
   eyebrow: "The Experience",
   heading: "Built Different. From The Ground Up.",
-  body: "David Williams doesn't run a tour. He brings you into the fold as a genuine chase partner, teaching meteorology, running forecasting sessions, and making every decision together. You're in the vehicle. You're in the data. You're in the storm.",
+  body: "I don't run a tour. I bring you into the fold as a genuine chase partner, teaching meteorology, running forecasting sessions, and making every decision together. You're in the vehicle. You're in the data. You're in the storm.",
   statCards: [
-    { value: "500+", label: "Tornado Intercepts" },
     { value: "20+", label: "Years in the Field" },
     { value: "6", label: "Continents Represented" },
     { value: "3", label: "Max Guests per Trip" },
@@ -45,7 +42,7 @@ export const experience = {
   features: [
     {
       title: "Max 3 Guests",
-      body: "David caps every trip at three guests. No crowds, just a tight team with full access to every decision, every data stream, every storm.",
+      body: "I cap every trip at three guests. No crowds, just a tight team with full access to every decision, every data stream, every storm.",
     },
     {
       title: "Live Forecasting",
@@ -53,11 +50,11 @@ export const experience = {
     },
     {
       title: "Safety Without Compromise",
-      body: "500+ intercepts and no serious incidents. David reads situations early and makes conservative calls. You get close to storms, not recklessly inside them.",
+      body: "No serious incidents. I read situations early and make conservative calls. You get close to storms, not recklessly inside them.",
     },
     {
       title: "Any Starting Point",
-      body: "Chasers from 6 continents have joined David, from total beginners to experienced meteorologists. He adjusts the depth of every session to where you are.",
+      body: "Chasers from 6 continents have joined me, from total beginners to experienced meteorologists. I adjust the depth of every session to where you are.",
     },
   ],
 };
@@ -66,9 +63,9 @@ export const philosophy = {
   eyebrow: "Our Philosophy",
   heading: "Partners, Not Passengers.",
   paragraphs: [
-    "Every other operator puts you in a seat and drives you past a storm. David puts you in the seat next to him, in the radar, in the forecast, and in every real-time call made during a chase.",
-    '"I primarily chase to see tornadoes, although I do love structure." David\'s focus is real interception, not scenic drives through the plains. Every day begins with forecasting and ends with debriefing. You leave knowing more than when you arrived.',
-    "David accepts chase partners of all levels, from those with zero meteorology background to experienced overseas chasers looking for a knowledgeable partner in Tornado Alley. The experience is shaped to you.",
+    "Every other operator puts you in a seat and drives you past a storm. I put you in the seat next to me, in the radar, in the forecast, and in every real-time call made during a chase.",
+    '"I primarily chase to see tornadoes, although I do love structure." My focus is real interception, not scenic drives through the plains. Every day begins with forecasting and ends with debriefing. You leave knowing more than when you arrived.',
+    "I accept chase partners of all levels, from those with zero meteorology background to experienced overseas chasers looking for a knowledgeable partner in Tornado Alley. The experience is shaped to you.",
   ],
   card: {
     title: "Field Partner Program",
@@ -87,12 +84,12 @@ export const philosophy = {
   },
   howItWorks: [
     {
-      title: "Email David",
-      body: "Reach out at TornadoAlleyChasing@gmail.com. Tell him who you are, your experience level, and what you're hoping to get from a chase season.",
+      title: "Email Me",
+      body: "Reach out at TornadoAlleyChasing@gmail.com. Tell me who you are, your experience level, and what you're hoping to get from a chase season.",
     },
     {
       title: "Video Interview",
-      body: "David video chats with every potential partner. He assesses expectations, mental and physical preparedness, and whether you're the right fit for the team.",
+      body: "I video chat with every potential partner. I assess expectations, mental and physical preparedness, and whether you're the right fit for the team.",
     },
     {
       title: "Secure Your Spot",
@@ -104,7 +101,7 @@ export const philosophy = {
     },
     {
       title: "Fly into Denver & Chase",
-      body: "Guests fly into Denver at their own expense. From there, David drives, following the data wherever the pattern demands, from Colorado to Canada.",
+      body: "Guests fly into Denver at their own expense. From there, I drive, following the data wherever the pattern demands, from Colorado to Canada.",
     },
   ],
   requirements: [
@@ -120,7 +117,7 @@ export const philosophy = {
     {
       title: "Safety & Mindset",
       items: [
-        "Respect David's safety decisions at all times",
+        "Respect my safety decisions at all times",
         "Understand that storm chasing involves real risk",
         "Be open to changing plans as the weather dictates",
         "Signed assumption of risk waiver required",
@@ -139,18 +136,18 @@ export const philosophy = {
       title: "Budget & Logistics",
       items: [
         "$300 deposit to secure your seat",
-        "$150/day guide fee to David",
+        "$150/day guide fee to me",
         "Cover your own flights into Denver",
         "Budget ~$100–130/day for gas, hotel, and food",
       ],
     },
   ],
   waiver:
-    "Storm chasing is a dangerous and potentially deadly activity. All participants must sign an assumption of risk waiver prior to any chase activity. David will not put guests in unnecessarily dangerous situations, but conditions are always unpredictable and real hazard is inherent to the experience.",
+    "Storm chasing is a dangerous and potentially deadly activity. All participants must sign an assumption of risk waiver prior to any chase activity. I will not put guests in unnecessarily dangerous situations, but conditions are always unpredictable and real hazard is inherent to the experience.",
   learn: {
     eyebrow: "On Every Chase Day",
     heading: "You'll Walk Away Knowing More.",
-    lead: "David has 20 years of teaching experience. Education is built into every day in the field.",
+    lead: "I have 20 years of teaching experience. Education is built into every day in the field.",
     cards: [
       {
         title: "Morning Forecasting",
@@ -158,11 +155,11 @@ export const philosophy = {
       },
       {
         title: "Real-Time Radar",
-        body: "In the vehicle with live data, multiple radar devices, Starlink connectivity, and David's live commentary on what the storm is doing and why each positioning decision is made.",
+        body: "In the vehicle with live data, multiple radar devices, Starlink connectivity, and my live commentary on what the storm is doing and why each positioning decision is made.",
       },
       {
         title: "Evening Debrief",
-        body: "After each chase, David walks through what happened, what the models got right, what was missed, what the storm did. Learning that sticks because you were there for every second of it.",
+        body: "After each chase, I walk through what happened, what the models got right, what was missed, what the storm did. Learning that sticks because you were there for every second of it.",
       },
     ],
   },
@@ -205,25 +202,25 @@ export const history = {
   },
   storyHeading: "Built from Failures.",
   paragraphs: [
-    "David started chasing in the early 2000s, a time before mobile data, smartphones, or the wealth of forecasting tools available today. The road was hard and filled with failures.",
-    "As educational weather sites and model data became accessible, David threw himself into the long journey of learning theoretical meteorology and applying it to real-world forecasting. Persistence built into skill. Failure built into success rates that kept climbing.",
-    "Without a mentor of his own, David felt the cost of learning alone. That experience is the engine behind everything TAC does, no guest should have to stumble through Tornado Alley without a knowledgeable partner at their side.",
+    "I started chasing in the early 2000s, a time before mobile data, smartphones, or the wealth of forecasting tools available today. The road was hard and filled with failures.",
+    "As educational weather sites and model data became accessible, I threw myself into the long journey of learning theoretical meteorology and applying it to real-world forecasting. Persistence built into skill. Failure built into success rates that kept climbing.",
+    "Without a mentor of my own, I felt the cost of learning alone. That experience is the engine behind everything TAC does, no guest should have to stumble through Tornado Alley without a knowledgeable partner at their side.",
   ],
   timeline: [
     {
       year: "Early 2000s",
       title: "The Beginning",
-      body: "David begins self-taught storm chasing with no mobile data, no smartphones, just raw determination and whatever weather resources existed at the time.",
+      body: "I begin self-taught storm chasing with no mobile data, no smartphones, just raw determination and whatever weather resources existed at the time.",
     },
     {
       year: "2000s–2010s",
       title: "Building the Craft",
-      body: "As model sites and educational weather platforms emerged, David builds a serious forecasting foundation, learning to read supercell environments, upper air charts, and Skew-T diagrams.",
+      body: "As model sites and educational weather platforms emerged, I build a serious forecasting foundation, learning to read supercell environments, upper air charts, and Skew-T diagrams.",
     },
     {
       year: "2015",
       title: "Tornado Alley Chasing Launches",
-      body: "After over a decade of solo chasing, David opens his vehicle to guests, not as a tour operator, but as a genuine chase partner and mentor. TAC is born.",
+      body: "After over a decade of solo chasing, I open my vehicle to guests, not as a tour operator, but as a genuine chase partner and mentor. TAC is born.",
     },
     {
       year: "2016 – Present",
@@ -240,8 +237,8 @@ export const history = {
     { year: "2021", desc: "A strong plains season with notable funnel cloud and wall cloud documentation." },
     { year: "2020", desc: "Chasing continued through challenging conditions across the full Tornado Alley corridor." },
     { year: "2019", desc: "International guests from the Czech Republic joined for an unforgettable two-week chase." },
-    { year: "2018", desc: "Finnish, Swedish, and European chasers partner with David across tornado season." },
-    { year: "2017", desc: "Guests from Slovenia and Hungary experience Tornado Alley firsthand alongside David." },
+    { year: "2018", desc: "Finnish, Swedish, and European chasers partner with me across tornado season." },
+    { year: "2017", desc: "Guests from Slovenia and Hungary experience Tornado Alley firsthand alongside me." },
     { year: "2016", desc: "The first full documented season, the foundation season of Tornado Alley Chasing guest logs." },
   ],
 };
@@ -249,10 +246,10 @@ export const history = {
 export const expenses = {
   eyebrow: "Transparent Pricing",
   heading: "Expenses & Costs.",
-  lead: "No hidden fees. No inflated tour markups. David charges $150 a day, a fraction of what large operators charge, because the goal is partnership, not profit extraction.",
-  rateLabel: "David's Daily Rate",
+  lead: "No hidden fees. No inflated tour markups. I charge $150 a day, a fraction of what large operators charge, because the goal is partnership, not profit extraction.",
+  rateLabel: "My Daily Rate",
   rateNote:
-    "Per chaser, per day. Payable directly to David. Covers his expertise, vehicle, fuel management, equipment, and 20+ years of experience guiding you safely through the field.",
+    "Per chaser, per day. Payable directly to me. Covers my expertise, vehicle, fuel management, equipment, and 20+ years of experience guiding you safely through the field.",
   compareBadge: "Competitors charge ~$400/day, TAC is 62% less",
   payment: [
     { when: "To Book", what: "$300 deposit, holds your seat in the vehicle" },
@@ -260,7 +257,7 @@ export const expenses = {
     { when: "2 Months Out", what: "Remaining 50% of guide fee due" },
   ],
   dailyLead:
-    "In addition to David's fee, guests split shared daily costs. Expect roughly $100–$130 per day, though this fluctuates with driving distance and hotel location.",
+    "In addition to my fee, guests split shared daily costs. Expect roughly $100–$130 per day, though this fluctuates with driving distance and hotel location.",
   breakdown: [
     { name: "Fuel / Gas", note: "Split among all chasers in vehicle", amount: "~$30" },
     { name: "Hotel", note: "Queen bed, shared room · WiFi, breakfast, gym included", amount: "$50–$100" },
@@ -275,7 +272,7 @@ export const expenses = {
     vs: "$400+",
   },
   covered: [
-    "David's expert guidance every day in the field",
+    "My expert guidance every day in the field",
     "Use of The Stormtrooper and all equipment",
     "Starlink & mobile hotspot WiFi in vehicle",
     "Multiple radar & weather devices",
@@ -326,7 +323,7 @@ export const homeStrip = [
 export const testimonials = {
   eyebrow: "From Chase Partners",
   heading: "Real People. Real Storms.",
-  lead: "Chasers from six continents have joined David in the field.",
+  lead: "Chasers from six continents have joined me in the field.",
   rating: "5.0 average across 15+ verified chasers from 6 continents",
   stats: [
     { value: "6", label: "Continents" },
@@ -363,7 +360,7 @@ export const testimonials = {
 export const training = {
   eyebrow: "Online · 1-on-1",
   heading: "Meteorology Training.",
-  lead: "Can't make it to Tornado Alley yet? David brings the forecasting room to your screen. Personalised, informal, and built around exactly what you want to learn.",
+  lead: "Can't make it to Tornado Alley yet? I bring the forecasting room to your screen. Personalised, informal, and built around exactly what you want to learn.",
   price: "$25",
   priceNote: "per session · 1-on-1 · online",
   platforms: ["Zoom", "Google Meet", "Discord"],
@@ -376,8 +373,8 @@ export const training = {
     "Severe weather forecasting specialisation",
   ],
   aboutParagraphs: [
-    "David's 1-on-1 training sessions are informal, focused, and delivered via live screen-sharing. Whether you're brand new to meteorology or looking to push your forecasting to the next level, sessions are shaped entirely around you.",
-    "Don't know where to start? David offers a structured lesson format so you can hit the ground running. Already know what you want to cover? Just tell him and that's what the session becomes.",
+    "My 1-on-1 training sessions are informal, focused, and delivered via live screen-sharing. Whether you're brand new to meteorology or looking to push your forecasting to the next level, sessions are shaped entirely around you.",
+    "Don't know where to start? I offer a structured lesson format so you can hit the ground running. Already know what you want to cover? Just tell me and that's what the session becomes.",
   ],
   topics: [
     { level: "Beginner", title: "Meteorology Fundamentals", body: "Introduction to weather systems, atmospheric instability, and how severe storms form. No prior knowledge needed." },
@@ -396,18 +393,71 @@ export const training = {
     "Custom topics of your choosing",
   ],
   limitations: [
-    "David is not a professional meteorologist or university professor",
+    "I am not a professional meteorologist or university professor",
     "Cannot assist with thermodynamic equations or advanced academic theory",
     "Does not cover monsoons, hurricanes, tropical storms, or winter weather",
   ],
   limitationsNote:
-    "David's strength is in applied, operational severe weather knowledge gained from 20+ years in the field, not academic meteorology.",
+    "My strength is in applied, operational severe weather knowledge gained from 20+ years in the field, not academic meteorology.",
+};
+
+export const datesSignUp = {
+  eyebrow: "2027 Season",
+  heading: "Dates & Sign-Up.",
+  lead:
+    "Every trip caps at three guest seats, so spots move fast. Check what's open below, then email me to set up your video interview.",
+  capacityNote: "Every group is capped at 3 seats total, per trip.",
+  legend: [
+    { key: "booked" as const, label: "Booked" },
+    { key: "open" as const, label: "Open" },
+  ],
+  tours: [
+    {
+      dateRange: "Apr 24 – May 8, 2027",
+      title: "Southern Plains Supercells",
+      note: "Focus: supercells paired with tornado potential",
+      seatsTotal: 3,
+      seatsBooked: 1,
+    },
+    {
+      dateRange: "May 12 – 26, 2027",
+      title: "Mid-May Mayhem",
+      seatsTotal: 3,
+      seatsBooked: 3,
+    },
+    {
+      dateRange: "May 29 – Jun 12, 2027",
+      title: "High Plains Hype Train",
+      seatsTotal: 3,
+      seatsBooked: 3,
+    },
+    {
+      dateRange: "Jun 16 – Jul 1, 2027",
+      title: "High Plains Insanity",
+      note: "Dates are flexible",
+      seatsTotal: 3,
+      seatsBooked: 0,
+    },
+  ],
+};
+
+export const chaseLogs = {
+  eyebrow: "The Full Record",
+  heading: "Chase Logs.",
+  lead:
+    "Every documented chase day since 2016, straight from the field notebook. Browse by season to see what the sky actually did.",
+  stats: [
+    { value: "88", label: "Chase Days Logged" },
+    { value: "33", label: "Tornado Days" },
+    { value: "8", label: "Active Seasons" },
+    { value: "2016", label: "Logging Since" },
+  ],
 };
 
 export const cta = {
   eyebrow: "Ready to Chase?",
   heading: "Your Storm Is Out There.",
-  body: "Every trip starts with a video interview. David screens all potential partners personally.",
+  body: "Every trip starts with a video interview. I screen all potential partners personally.",
 };
 
 export const footer = {

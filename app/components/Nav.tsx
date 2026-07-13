@@ -8,11 +8,13 @@ import { EMAIL } from "../content";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/dates-sign-up", label: "Dates + Sign-up" },
   { href: "/chase-history", label: "Chase History" },
   { href: "/chasing-with-me", label: "Chasing With Me" },
   { href: "/expenses", label: "Expenses" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/training", label: "1-on-1 Training" },
+  { href: "/chase-logs", label: "Chase Logs" },
 ];
 
 export default function Nav() {

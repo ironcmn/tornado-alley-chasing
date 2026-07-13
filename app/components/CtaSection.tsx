@@ -45,7 +45,7 @@ export default function CtaSection({
           <p className="mx-auto mt-5 mb-9 max-w-xl text-[1.05rem] text-muted">{body}</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href={`mailto:${EMAIL}`} className="btn btn-primary">
-              Email David
+              Email Me
             </a>
             {secondaryHref && secondaryLabel && (
               <a href={secondaryHref} className="btn btn-ghost">

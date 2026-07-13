@@ -7,7 +7,7 @@ import { testimonials } from "../content";
 export const metadata: Metadata = {
   title: "Testimonials, Tornado Alley Chasing",
   description:
-    "Real reviews from chase partners across 6 continents. See what it's like to chase tornadoes with David Williams.",
+    "Real reviews from chase partners across 6 continents. See what it's like to chase tornadoes with me.",
 };
 
 export default function Testimonials() {
@@ -20,7 +20,7 @@ export default function Testimonials() {
         eyebrow="From the Field"
         line1="Chase Partner"
         accent="Testimonials."
-        lead="Real words from real people who've been in the vehicle, in the storm, and in the data with David. No filters, no marketing, just what it's actually like."
+        lead="Real words from real people who've been in the vehicle, in the storm, and in the data with me. No filters, no marketing, just what it's actually like."
       />
 
       {/* World stats */}
@@ -52,7 +52,7 @@ export default function Testimonials() {
               <span className="accent">Every Corner.</span>
             </h2>
             <p className="mt-5 text-[1.02rem] text-muted">
-              David&apos;s guests have flown in from across Europe, Australia, and North America to
+              My guests have flown in from across Europe, Australia, and North America to
               partner in Tornado Alley. The experience translates regardless of where you&apos;re
               from, storm chasing is a universal language.
             </p>
@@ -150,7 +150,7 @@ export default function Testimonials() {
         eyebrow="Add Your Story"
         line1="The Next Review"
         accent="Could Be Yours."
-        body="Every person on this page started with a single email to David. Your seat in the vehicle is waiting."
+        body="Every person on this page started with a single email to me. Your seat in the vehicle is waiting."
         secondaryHref="/chasing-with-me"
         secondaryLabel="What to Expect"
         deep

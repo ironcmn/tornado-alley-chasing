@@ -8,7 +8,7 @@ import { EMAIL, training } from "../content";
 export const metadata: Metadata = {
   title: "1-on-1 Training, Tornado Alley Chasing",
   description:
-    "Online meteorology training with David Williams. $25/hour via Zoom. Beginner to advanced storm forecasting, Skew-T, supercells, upper air charts.",
+    "Online meteorology training with me. $25/hour via Zoom. Beginner to advanced storm forecasting, Skew-T, supercells, upper air charts.",
 };
 
 export default function Training() {
@@ -102,16 +102,16 @@ export default function Training() {
               <div className="mt-5">
                 {[
                   {
-                    title: "Email David",
-                    body: `Send a message to ${EMAIL}. Tell him what you're hoping to learn and your current knowledge level.`,
+                    title: "Email Me",
+                    body: `Send a message to ${EMAIL}. Tell me what you're hoping to learn and your current knowledge level.`,
                   },
                   {
                     title: "Agree on Topics & Time",
-                    body: "David will help shape the session around your goals, or provide a structured outline if you'd rather he lead the content.",
+                    body: "I will help shape the session around your goals, or provide a structured outline if you'd rather I lead the content.",
                   },
                   {
                     title: "Join the Session",
-                    body: "Log onto Zoom, Google Meet, or Discord. David shares his screen and walks you through the material live, with full Q&A throughout.",
+                    body: "Log onto Zoom, Google Meet, or Discord. I share my screen and walk you through the material live, with full Q&A throughout.",
                   },
                   {
                     title: "Pay $25",
@@ -170,7 +170,7 @@ export default function Training() {
               />
               <div className="relative grid gap-12 md:grid-cols-2">
                 <div>
-                  <div className="eyebrow mb-3.5">What David Covers</div>
+                  <div className="eyebrow mb-3.5">What I Cover</div>
                   <ul className="check-list">
                     {training.covers.map((c) => (
                       <li key={c}>{c}</li>
@@ -219,7 +219,7 @@ export default function Training() {
         eyebrow="$25 · One Hour · Online"
         line1="Ready to Level"
         accent="Up Your Forecasting?"
-        body="Email David to schedule your first session. Tell him where you're starting from and what you want to know."
+        body="Email me to schedule your first session. Tell me where you're starting from and what you want to know."
         secondaryHref="/testimonials"
         secondaryLabel="Read Testimonials"
       />

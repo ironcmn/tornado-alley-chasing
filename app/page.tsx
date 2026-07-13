@@ -170,7 +170,7 @@ export default function Home() {
               Real People. <span className="accent">Real Storms.</span>
             </h2>
             <p className="mt-3 max-w-xl text-muted">
-              Chasers from six continents have joined David in the field.
+              Chasers from six continents have joined me in the field.
             </p>
             <div className="mt-4 flex items-center gap-3">
               <span className="text-accent" aria-label="5 out of 5 stars">
@@ -216,7 +216,7 @@ export default function Home() {
           <Reveal className="relative">
             <Image
               src="/images/stormtrooper.jpg"
-              alt="The Stormtrooper, David's chase vehicle on a dirt road with a real tornado in the background"
+              alt="The Stormtrooper, my chase vehicle on a dirt road with a real tornado in the background"
               width={900}
               height={600}
               className="w-full rounded-[var(--radius-xl)] border border-line object-cover"

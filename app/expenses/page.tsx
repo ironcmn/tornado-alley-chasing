@@ -7,7 +7,7 @@ import { expenses } from "../content";
 export const metadata: Metadata = {
   title: "Expenses, Tornado Alley Chasing",
   description:
-    "Transparent pricing for storm chasing with David Williams. $150/day guide fee plus shared daily expenses. Far below industry average.",
+    "Transparent pricing for storm chasing with me. $150/day guide fee plus shared daily expenses. Far below industry average.",
 };
 
 export default function Expenses() {
@@ -204,8 +204,8 @@ export default function Expenses() {
       <CtaSection
         eyebrow="No Hidden Costs"
         line1="Questions?"
-        accent="Just Ask David."
-        body="Every trip is different. Email David to discuss your specific dates, group size, and what to budget."
+        accent="Just Ask Me."
+        body="Every trip is different. Email me to discuss your specific dates, group size, and what to budget."
         secondaryHref="/chasing-with-me"
         secondaryLabel="What to Expect"
         deep

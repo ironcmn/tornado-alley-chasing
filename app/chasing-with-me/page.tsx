@@ -8,7 +8,7 @@ import { EMAIL, philosophy } from "../content";
 export const metadata: Metadata = {
   title: "Chasing With Me, Tornado Alley Chasing",
   description:
-    "You're a chase partner, not a passenger. Learn what it's really like to chase tornadoes with David Williams.",
+    "You're a chase partner, not a passenger. Learn what it's really like to chase tornadoes with me.",
 };
 
 export default function ChasingWithMe() {
@@ -18,7 +18,7 @@ export default function ChasingWithMe() {
         eyebrow="The Experience"
         line1="Chasing"
         accent="With Me."
-        lead="You're not watching from the tour van. You're in the data, in the decisions, and in the storm. David brings you in as a genuine chase partner from day one."
+        lead="You're not watching from the tour van. You're in the data, in the decisions, and in the storm. I bring you in as a genuine chase partner from day one."
       />
 
       <section className="section">
@@ -62,7 +62,7 @@ export default function ChasingWithMe() {
                     href={`mailto:${EMAIL}`}
                     className="btn btn-primary mt-2 w-full justify-center"
                   >
-                    Email David to Start
+                    Email Me to Start
                   </a>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function ChasingWithMe() {
           <Reveal>
             <div className="eyebrow mt-20">Requirements &amp; Expectations</div>
             <h2 className="mb-10">
-              What David <span className="accent">Needs From You.</span>
+              What I <span className="accent">Need From You.</span>
             </h2>
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
@@ -200,7 +200,7 @@ export default function ChasingWithMe() {
         eyebrow="Ready to Partner Up?"
         line1="Your Place In"
         accent="The Team Is Open."
-        body="Maximum three guests. Always a video interview first. Email David to start the conversation."
+        body="Maximum three guests. Always a video interview first. Email me to start the conversation."
         secondaryHref="/expenses"
         secondaryLabel="See Full Pricing"
       />

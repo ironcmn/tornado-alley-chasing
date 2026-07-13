@@ -18,7 +18,7 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Tornado Alley Chasing, Chase Real Tornadoes Since 2015",
   description:
-    "You're not a tourist, you're part of the team. Chase tornadoes with David Williams, 20+ years experience. $150/day. Limited to 3 guests.",
+    "You're not a tourist, you're part of the team. Chase tornadoes with me, 20+ years experience. $150/day. Limited to 3 guests.",
 };
 
 export default function RootLayout({

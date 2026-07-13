@@ -8,7 +8,7 @@ import { history } from "../content";
 export const metadata: Metadata = {
   title: "Chase History, Tornado Alley Chasing",
   description:
-    "20+ years of storm chasing experience. David Williams' journey from self-taught forecaster to Tornado Alley mentor.",
+    "20+ years of storm chasing experience. My journey from self-taught forecaster to Tornado Alley mentor.",
 };
 
 export default function ChaseHistory() {
@@ -173,7 +173,7 @@ export default function ChaseHistory() {
         eyebrow="Write Your Own Chapter"
         line1="Your Season"
         accent="Starts Here."
-        body="Every chase log has a story. Email David to start yours."
+        body="Every chase log has a story. Email me to start yours."
         secondaryHref="/chasing-with-me"
         secondaryLabel="What to Expect"
         deep
