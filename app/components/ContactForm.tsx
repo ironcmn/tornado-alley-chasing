@@ -4,7 +4,7 @@ import { useState } from "react";
 import { EMAIL } from "../content";
 
 // The original site has no backend we can reuse, so the form opens a
-// pre-filled email to David — same destination as the site's booking flow.
+// pre-filled email to David, same destination as the site's booking flow.
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ export default function ContactForm() {
   function submit(e: React.FormEvent) {
     e.preventDefault();
     const subject = encodeURIComponent(`Booking inquiry from ${name}`);
-    const body = encodeURIComponent(`${comment}\n\n— ${name} (${email})`);
+    const body = encodeURIComponent(`${comment}\n\n${name} (${email})`);
     window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
   }
 

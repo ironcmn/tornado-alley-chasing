@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import CtaSection from "../components/CtaSection";
-import { testimonials } from "../content";
+import { teamGallery, testimonials } from "../content";
 
 export const metadata: Metadata = {
   title: "Testimonials, Tornado Alley Chasing",
@@ -98,6 +99,41 @@ export default function Testimonials() {
 
       <div className="s-divider" />
 
+      {/* Team photo gallery */}
+      <section className="section">
+        <div className="container-site">
+          <Reveal>
+            <div className="mb-12 text-center">
+              <div className="eyebrow eyebrow-center">{teamGallery.eyebrow}</div>
+              <h2>
+                One Vehicle. <span className="accent">One Crew.</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-muted">{teamGallery.lead}</p>
+            </div>
+          </Reveal>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {teamGallery.photos.map((p, i) => (
+              <Reveal key={p.src} delay={(i % 3) * 0.1}>
+                <figure>
+                  <Image
+                    src={p.src}
+                    alt={p.alt}
+                    width={2400}
+                    height={1600}
+                    className="h-64 w-full rounded-[var(--radius-lg)] border border-line object-cover sm:h-72"
+                  />
+                  <figcaption className="mt-2.5 text-[0.82rem] text-[var(--txt-3)]">
+                    {p.caption}
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="s-divider" />
+
       {/* All testimonials grouped by year */}
       <section className="section">
         <div className="container-site">
@@ -112,7 +148,7 @@ export default function Testimonials() {
               <div key={year}>
                 <Reveal>
                   <div className="font-display mb-7 flex items-center gap-4 border-b border-line pb-4 text-4xl tracking-[0.05em] text-accent">
-                    {year === "—" ? "More Voices" : year}
+                    {year === "more" ? "More Voices" : year}
                     <span
                       className="h-px flex-1"
                       style={{

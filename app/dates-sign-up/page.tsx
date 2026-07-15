@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Tornado } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
@@ -36,14 +37,26 @@ export default function DatesSignUp() {
       <section className="section">
         <div className="container-site">
           <Reveal>
+            <div className="mb-14 overflow-hidden rounded-[var(--radius-xl)] border border-line">
+              <Image
+                src="/images/tornado-elephant-trunk.jpg"
+                alt="Elephant trunk tornado sweeping across Illinois farmland"
+                width={2800}
+                height={1867}
+                className="h-[260px] w-full object-cover md:h-[380px]"
+                priority
+              />
+            </div>
+          </Reveal>
+          <Reveal>
             <div className="mb-12 flex flex-wrap items-center justify-between gap-4 border-b border-line pb-8">
               <p className="text-[0.9rem] text-muted">{datesSignUp.capacityNote}</p>
               <div className="flex items-center gap-5 text-[0.8rem] text-muted">
                 <span className="flex items-center gap-2">
-                  <SeatIcon filled /> Booked
+                  <SeatIcon filled /> Available
                 </span>
                 <span className="flex items-center gap-2">
-                  <SeatIcon filled={false} /> Open
+                  <SeatIcon filled={false} /> Booked
                 </span>
               </div>
             </div>
@@ -84,7 +97,7 @@ export default function DatesSignUp() {
 
                     <div className="mt-7 flex items-center gap-2.5">
                       {Array.from({ length: t.seatsTotal }).map((_, seatIdx) => (
-                        <SeatIcon key={seatIdx} filled={seatIdx < t.seatsBooked} />
+                        <SeatIcon key={seatIdx} filled={seatIdx >= t.seatsBooked} />
                       ))}
                     </div>
 

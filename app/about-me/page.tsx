@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import QuoteBlock from "../components/QuoteBlock";
@@ -6,18 +7,18 @@ import CtaSection from "../components/CtaSection";
 import { history } from "../content";
 
 export const metadata: Metadata = {
-  title: "Chase History, Tornado Alley Chasing",
+  title: "About Me, Tornado Alley Chasing",
   description:
-    "20+ years of storm chasing experience. My journey from self-taught forecaster to Tornado Alley mentor.",
+    "Meet David Williams: 20+ years of storm chasing experience, from self-taught forecaster to Tornado Alley mentor.",
 };
 
-export default function ChaseHistory() {
+export default function AboutMe() {
   return (
     <>
       <PageHeader
         eyebrow="David Williams"
-        line1="Chase"
-        accent="History."
+        line1="About"
+        accent="Me."
         lead={history.lead}
       />
 
@@ -52,9 +53,13 @@ export default function ChaseHistory() {
                 }}
                 aria-hidden
               />
-              <div className="font-display relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-2 border-[var(--border)] bg-[var(--bg-deep)] text-5xl text-accent">
-                DW
-              </div>
+              <Image
+                src={history.portrait.photo.src}
+                alt={history.portrait.photo.alt}
+                width={2400}
+                height={1600}
+                className="relative w-full rounded-[var(--radius-lg)] border border-line object-cover"
+              />
               <div>
                 <div className="font-display text-3xl tracking-[0.06em]">
                   {history.portrait.name}
@@ -102,6 +107,20 @@ export default function ChaseHistory() {
                 </Reveal>
               ))}
             </div>
+            <Reveal delay={0.15}>
+              <figure className="mt-10">
+                <Image
+                  src="/images/tornado-cone-il.jpg"
+                  alt="Cone tornado over farmland in Illinois"
+                  width={2400}
+                  height={1600}
+                  className="w-full rounded-[var(--radius-lg)] border border-line object-cover"
+                />
+                <figcaption className="mt-2.5 text-[0.8rem] text-[var(--txt-3)]">
+                  Documented in the field: cone tornado, Illinois.
+                </figcaption>
+              </figure>
+            </Reveal>
             <div className="relative mt-12 pl-8">
               <span
                 className="absolute bottom-2 left-0 top-2 w-px"

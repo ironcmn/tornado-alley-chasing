@@ -3,7 +3,7 @@ import Link from "next/link";
 import IntroScrub from "./components/IntroScrub";
 import Reveal from "./components/Reveal";
 import CtaSection from "./components/CtaSection";
-import { EMAIL, ticker, heroIntro, experience, homeStrip, vehicle, cta } from "./content";
+import { EMAIL, ticker, heroIntro, meetDavid, experience, homeStrip, vehicle, cta } from "./content";
 
 export default function Home() {
   return (
@@ -76,17 +76,73 @@ export default function Home() {
             </Reveal>
           </div>
           <Reveal delay={0.2}>
-            <div className="grid grid-cols-2 gap-3.5 border-t border-line pt-4 sm:border-0 sm:pt-0">
-              {heroIntro.stats.map((s) => (
-                <div key={s.label} className="card !p-7 text-center">
-                  <div className="stat-value">{s.value}</div>
-                  <div className="stat-label">{s.label}</div>
-                </div>
-              ))}
+            <div className="flex flex-col gap-3.5 border-t border-line pt-4 sm:border-0 sm:pt-0">
+              <Image
+                src="/images/david-partner-tornado.jpg"
+                alt="David and a chase partner filming a tornado from a safe distance on a country road"
+                width={2400}
+                height={1600}
+                className="w-full rounded-[var(--radius-xl)] border border-line object-cover"
+              />
+              <div className="grid grid-cols-2 gap-3.5">
+                {heroIntro.stats.map((s) => (
+                  <div key={s.label} className="card !p-7 text-center">
+                    <div className="stat-value">{s.value}</div>
+                    <div className="stat-label">{s.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>
       </section>
+
+      {/* Meet David */}
+      <section id="meet-david" className="section bg-[var(--bg-deep)]">
+        <div className="container-site grid items-center gap-12 lg:grid-cols-[1fr_1.2fr]">
+          <Reveal>
+            <figure>
+              <Image
+                src={meetDavid.photo.src}
+                alt={meetDavid.photo.alt}
+                width={480}
+                height={352}
+                className="w-full rounded-[var(--radius-xl)] border border-line object-cover"
+              />
+              <figcaption className="mt-2.5 text-[0.8rem] text-[var(--txt-3)]">
+                {meetDavid.photo.caption}
+              </figcaption>
+            </figure>
+          </Reveal>
+          <div>
+            <Reveal delay={0.1}>
+              <div className="eyebrow">{meetDavid.eyebrow}</div>
+              <h2>
+                {meetDavid.heading[0]} <span className="accent">{meetDavid.heading[1]}</span>
+              </h2>
+            </Reveal>
+            <div className="mt-6 space-y-6 text-[1.02rem] leading-[1.75] text-muted">
+              {meetDavid.paragraphs.map((p, i) => (
+                <Reveal key={i} delay={0.15 + i * 0.07}>
+                  <p>{p}</p>
+                </Reveal>
+              ))}
+            </div>
+            <Reveal delay={0.3}>
+              <div className="font-display mt-7 text-lg tracking-[0.08em] text-accent">
+                {meetDavid.signature}
+              </div>
+              <div className="mt-7">
+                <Link href="/about-me" className="btn btn-ghost">
+                  Read My Full Story →
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <div className="s-divider" />
 
       {/* The Experience */}
       <section id="experience" className="section bg-[var(--bg-deep)]">
@@ -215,8 +271,8 @@ export default function Home() {
         <div className="container-site grid items-center gap-12 lg:grid-cols-2">
           <Reveal className="relative">
             <Image
-              src="/images/stormtrooper.jpg"
-              alt="The Stormtrooper, my chase vehicle on a dirt road with a real tornado in the background"
+              src="/images/stormtrooper-tornado.jpg"
+              alt="The Stormtrooper, my chase vehicle parked roadside with a tornado touching down in the background"
               width={900}
               height={600}
               className="w-full rounded-[var(--radius-xl)] border border-line object-cover"

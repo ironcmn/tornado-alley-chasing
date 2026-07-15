@@ -7,7 +7,7 @@ import { expenses } from "../content";
 export const metadata: Metadata = {
   title: "Expenses, Tornado Alley Chasing",
   description:
-    "Transparent pricing for storm chasing with me. $150/day guide fee plus shared daily expenses. Far below industry average.",
+    "Transparent pricing for storm chasing with me. $150/day guide fee plus shared daily expenses, all laid out up front.",
 };
 
 export default function Expenses() {
@@ -43,8 +43,8 @@ export default function Expenses() {
                     $150 <span className="price-unit">/ day</span>
                   </div>
                   <p className="mt-3.5 text-[0.92rem] text-muted">{expenses.rateNote}</p>
-                  <div className="mt-5 inline-flex items-center gap-2 rounded-[var(--radius)] border border-green-500/20 bg-green-500/[0.08] px-[18px] py-2.5 text-[0.82rem] font-semibold text-[var(--safe)]">
-                    ✓ {expenses.compareBadge}
+                  <div className="mt-5 rounded-[var(--radius)] border border-[rgba(245,158,11,0.2)] bg-[var(--amber-dim)] px-[18px] py-3.5 text-[0.88rem] leading-[1.65] text-muted">
+                    {expenses.accessNote}
                   </div>
                 </div>
                 <div className="p-10 pt-8">
@@ -93,26 +93,15 @@ export default function Expenses() {
                   </div>
                 ))}
               </div>
-              <div className="mt-8 grid items-center gap-8 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--bg-deep)] p-10 sm:grid-cols-[1fr_auto]">
-                <div>
-                  <div className="mb-2 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-accent">
-                    {expenses.total.label}
-                  </div>
-                  <div className="font-display text-5xl">
-                    {expenses.total.value}{" "}
-                    <span className="align-middle text-base text-muted">/ day</span>
-                  </div>
-                  <div className="mt-2 text-[0.85rem] text-muted">{expenses.total.note}</div>
+              <div className="mt-8 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--bg-deep)] p-10">
+                <div className="mb-2 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-accent">
+                  {expenses.total.label}
                 </div>
-                <div className="text-center">
-                  <div className="font-display mb-1 text-[0.85rem] tracking-[0.1em] text-[var(--txt-3)]">
-                    vs. industry avg.
-                  </div>
-                  <div className="font-display text-3xl text-[var(--txt-3)] line-through">
-                    {expenses.total.vs}
-                  </div>
-                  <div className="text-[0.75rem] text-[var(--txt-3)]">per day elsewhere</div>
+                <div className="font-display text-5xl">
+                  {expenses.total.value}{" "}
+                  <span className="align-middle text-base text-muted">/ day</span>
                 </div>
+                <div className="mt-2 text-[0.85rem] text-muted">{expenses.total.note}</div>
               </div>
             </Reveal>
           </div>
@@ -145,57 +134,6 @@ export default function Expenses() {
             </Reveal>
           </div>
 
-          {/* Comparison */}
-          <Reveal>
-            <div className="eyebrow mt-20">Price Comparison</div>
-            <h3 className="mb-2">
-              TAC vs. <span className="accent">The Competition.</span>
-            </h3>
-            <p className="text-[0.95rem] text-muted">{expenses.comparison.lead}</p>
-          </Reveal>
-          <div className="mt-8 grid items-center gap-7 md:grid-cols-[1fr_auto_1fr]">
-            <Reveal>
-              <div className="card !border-[var(--border)] !bg-[var(--bg-card-h)] !p-8 text-center">
-                <div className="text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-muted">
-                  Tornado Alley Chasing
-                </div>
-                <div className="font-display my-3 text-6xl leading-none text-accent">
-                  {expenses.comparison.tac.price}
-                </div>
-                <div className="text-[0.78rem] text-muted">{expenses.comparison.tac.note}</div>
-                <div className="mt-3.5 flex flex-col gap-1.5">
-                  {expenses.comparison.tac.badges.map((b) => (
-                    <span key={b} className="badge badge-amber justify-center">
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Reveal>
-            <div className="font-display text-center text-2xl text-[var(--txt-3)]" aria-hidden>
-              VS
-            </div>
-            <Reveal delay={0.1}>
-              <div className="card !p-8 text-center">
-                <div className="text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-muted">
-                  Typical Tour Operators
-                </div>
-                <div className="font-display my-3 text-6xl leading-none text-[var(--txt-3)]">
-                  {expenses.comparison.others.price}
-                </div>
-                <div className="text-[0.78rem] text-[var(--txt-3)]">
-                  {expenses.comparison.others.note}
-                </div>
-                <div className="mt-3.5 flex flex-col gap-1.5">
-                  {expenses.comparison.others.badges.map((b) => (
-                    <span key={b} className="badge badge-danger justify-center">
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Reveal>
-          </div>
         </div>
       </section>
 

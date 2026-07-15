@@ -5,7 +5,7 @@ import { footer } from "../content";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/dates-sign-up", label: "Dates + Sign-up" },
-  { href: "/chase-history", label: "Chase History" },
+  { href: "/about-me", label: "About Me" },
   { href: "/chasing-with-me", label: "Chasing With Me" },
   { href: "/expenses", label: "Expenses" },
   { href: "/testimonials", label: "Testimonials" },
@@ -47,6 +47,17 @@ export default function Footer() {
                 <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none" />
               </svg>
             </a>
+            <a
+              href={footer.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="flex h-10 w-10 items-center justify-center rounded-lg border border-line bg-card text-muted transition-colors hover:border-accent hover:bg-[var(--amber-dim)] hover:text-accent"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px]" aria-hidden>
+                <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z" />
+              </svg>
+            </a>
           </div>
         </div>
         <div>
@@ -70,12 +81,6 @@ export default function Footer() {
               </span>
               <EmailCopy />
             </div>
-            <div>
-              <span className="block text-[0.7rem] font-bold uppercase tracking-[0.1em] text-accent">
-                Social
-              </span>
-              {footer.social}
-            </div>
             <span className="badge badge-amber">All skill levels welcome</span>
           </div>
         </div>
@@ -83,6 +88,7 @@ export default function Footer() {
       <div className="border-t border-line">
         <div className="container-site flex flex-wrap items-center justify-between gap-3 py-6 text-[0.78rem] text-[var(--txt-3)]">
           <span>{footer.copyright}</span>
+          <span>{footer.credit}</span>
           <span>{footer.byline}</span>
         </div>
       </div>

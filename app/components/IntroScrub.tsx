@@ -39,7 +39,7 @@ export default function IntroScrub() {
   const titleY = useTransform(smoothProgress, [TITLE_AT, TITLE_FULL], [40, 0]);
   const cueOpacity = useTransform(smoothProgress, [0, 0.08], [1, 0]);
 
-  // On portrait screens a centered crop of the 16:9 video shows only the road —
+  // On portrait screens a centered crop of the 16:9 video shows only the road;
   // the two tornado funnels sit at roughly 15% and 75% of the frame width. So on
   // narrow viewports the crop window pans from the left funnel to the right one
   // as the user scrolls, keeping a tornado in view the whole flythrough.

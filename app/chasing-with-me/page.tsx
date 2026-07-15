@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import QuoteBlock from "../components/QuoteBlock";
 import CtaSection from "../components/CtaSection";
-import { EMAIL, philosophy } from "../content";
+import { EMAIL, philosophy, vehicle } from "../content";
 
 export const metadata: Metadata = {
   title: "Chasing With Me, Tornado Alley Chasing",
@@ -27,6 +28,13 @@ export default function ChasingWithMe() {
             {/* Sticky program card */}
             <Reveal>
               <div className="card overflow-hidden !p-0 lg:sticky lg:top-24">
+                <Image
+                  src="/images/storm-structure.jpg"
+                  alt="Layered supercell storm structure over open fields"
+                  width={2400}
+                  height={1800}
+                  className="h-44 w-full border-b border-line object-cover"
+                />
                 <div className="relative border-b border-line bg-[var(--bg-deep)] p-10 text-center">
                   <div
                     className="pointer-events-none absolute inset-0"
@@ -85,6 +93,20 @@ export default function ChasingWithMe() {
                   </Reveal>
                 ))}
               </div>
+              <Reveal delay={0.15}>
+                <figure className="mt-10">
+                  <Image
+                    src="/images/david-radar.jpg"
+                    alt="David behind the wheel with live radar on the dash and a tornado visible through the windshield"
+                    width={2316}
+                    height={1080}
+                    className="w-full rounded-[var(--radius-lg)] border border-line object-cover"
+                  />
+                  <figcaption className="mt-2.5 text-[0.8rem] text-[var(--txt-3)]">
+                    In the data, in the decisions, closing in with live radar.
+                  </figcaption>
+                </figure>
+              </Reveal>
               <Reveal delay={0.2}>
                 <div className="eyebrow mt-12">How It Works</div>
               </Reveal>
@@ -151,6 +173,61 @@ export default function ChasingWithMe() {
               <p className="text-[0.92rem] text-muted">{philosophy.waiver}</p>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <div className="s-divider" />
+
+      {/* The Stormtrooper */}
+      <section className="section bg-[var(--bg-deep)]">
+        <div className="container-site">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div>
+              <Reveal>
+                <div className="eyebrow">{vehicle.eyebrow}</div>
+                <h2>
+                  Meet <span className="accent">{vehicle.name}.</span>
+                </h2>
+              </Reveal>
+              <div className="mt-6 space-y-6 text-[1.02rem] text-muted">
+                {vehicle.details.map((p, i) => (
+                  <Reveal key={i} delay={0.1 + i * 0.08}>
+                    <p>{p}</p>
+                  </Reveal>
+                ))}
+              </div>
+              <div className="mt-7 grid grid-cols-2 gap-3.5">
+                {vehicle.specs.map((s, i) => (
+                  <Reveal key={s.label} delay={0.2 + i * 0.07}>
+                    <div className="rounded-[var(--radius-sm)] border border-line bg-card px-[18px] py-3.5">
+                      <div className="mb-1 text-[0.7rem] font-bold uppercase tracking-[0.12em] text-accent">
+                        {s.label}
+                      </div>
+                      <div className="text-[0.88rem] font-medium text-foreground">{s.value}</div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-6">
+              {vehicle.photos.map((p, i) => (
+                <Reveal key={p.src} delay={0.15 + i * 0.1}>
+                  <figure>
+                    <Image
+                      src={p.src}
+                      alt={p.alt}
+                      width={2400}
+                      height={1600}
+                      className="w-full rounded-[var(--radius-lg)] border border-line object-cover"
+                    />
+                    <figcaption className="mt-2.5 text-[0.8rem] text-[var(--txt-3)]">
+                      {p.caption}
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

@@ -9,7 +9,7 @@ import { EMAIL } from "../content";
 const links = [
   { href: "/", label: "Home" },
   { href: "/dates-sign-up", label: "Dates + Sign-up" },
-  { href: "/chase-history", label: "Chase History" },
+  { href: "/about-me", label: "About Me" },
   { href: "/chasing-with-me", label: "Chasing With Me" },
   { href: "/expenses", label: "Expenses" },
   { href: "/testimonials", label: "Testimonials" },

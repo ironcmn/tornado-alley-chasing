@@ -3,7 +3,7 @@
 
 export const EMAIL = "TornadoAlleyChasing@gmail.com";
 
-// Used by the IntroScrub hero — keep as is, the flythrough hero must not change.
+// Used by the IntroScrub hero. Keep as is, the flythrough hero must not change.
 export const intro = {
   tagline: "teaching and mentoring Chasers Since 2015",
 };
@@ -14,20 +14,37 @@ export const ticker = [
   "Max 3 Guests Per Trip",
   "20+ Years Field Experience",
   "Chasers from 6 Continents",
-  "Colorado Base Camp",
+  "Oklahoma Base Camp",
   "All Skill Levels Welcome",
 ];
 
 export const heroIntro = {
-  badge: "Active Since 2015 · Est. Colorado",
+  badge: "Active Since 2015 · Est. Oklahoma",
   heading: ["You're Not", "A Tourist.", "You're The Team."],
   body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership not performance. This is your storm too.",
   steps: ["Email Me", "Short video call", "Plan your chase"],
   stats: [
     { value: "20+", label: "Years Chasing" },
-    { value: "$150", label: "Per Day, All-In", accent: true },
+    { value: "$150", label: "Per Day + Shared Expenses", accent: true },
     { value: "3", label: "Max Guests" },
   ],
+};
+
+// Personal intro from David, condensed from the landing page of his original site.
+export const meetDavid = {
+  eyebrow: "Meet Your Chase Partner",
+  heading: ["Hi, I'm", "David."],
+  paragraphs: [
+    "My mission is to educate people from around the world who want to learn to forecast and chase tornadoes. I teach meteorology, forecasting, and how to chase safely and successfully. And if you're an established chaser from overseas, I welcome you as a genuine storm chasing partner.",
+    "Tornado Alley has some of the wildest and most photogenic weather on Earth, and I want you to have an active and immersive experience chasing it. I lead small, enthusiastic groups that rely on each other for a fun, educational, and memorable experience.",
+    "No experience? No problem. If you share my passion for severe weather, I want you to have the opportunity to pursue it.",
+  ],
+  signature: "David Williams, Founder",
+  photo: {
+    src: "/images/chase-group.jpg",
+    alt: "David grinning at the camera with a tornado on the ground behind him",
+    caption: "That's me. Yes, that's a real tornado behind me.",
+  },
 };
 
 export const experience = {
@@ -50,7 +67,7 @@ export const experience = {
     },
     {
       title: "Safety Without Compromise",
-      body: "No serious incidents. I read situations early and make conservative calls. You get close to storms, not recklessly inside them.",
+      body: "Safety is my highest concern, always. I read situations early and make conservative calls. You get close to storms, not recklessly inside them.",
     },
     {
       title: "Any Starting Point",
@@ -177,12 +194,28 @@ export const vehicle = {
     { label: "Capability", value: "4x4 Lifted Off-Road" },
     { label: "Instruments", value: "Multi-device Radar Suite" },
   ],
+  details: [
+    "The Stormtrooper isn't a rental van with a magnet sign on the door. It's a lifted, off-road-capable Toyota 4Runner built specifically for storm chasing: deployable hail shields, a full multi-device radar suite, and Starlink plus hotspot WiFi so we never lose data in the middle of nowhere.",
+    "That capability matters. Tornado Alley's best positioning is often down a muddy section road that would strand a two-wheel-drive tour van. When the storm goes off the pavement, we can follow it, safely, and with live radar the whole way.",
+  ],
+  photos: [
+    {
+      src: "/images/stormtrooper-4runner.jpg",
+      alt: "The Stormtrooper, a lifted white 4Runner, parked roadside with a tornado in the distance",
+      caption: "The Stormtrooper on an intercept, tornado on the ground ahead.",
+    },
+    {
+      src: "/images/stormtrooper.jpg",
+      alt: "The TAC chase vehicle parked on a dirt road watching a distant cone tornado",
+      caption: "Hail shields mounted, radar running, cone tornado in view.",
+    },
+  ],
 };
 
 export const history = {
   eyebrow: "David Williams",
-  heading: "Chase History.",
-  lead: "From a self-taught forecaster struggling with no mobile data or smartphones, to one of Tornado Alley's most trusted mentors. 20+ years in the making.",
+  heading: "About Me.",
+  lead: "I'm David: storm chaser, forecaster, and mentor. From a self-taught chaser struggling with no mobile data or smartphones to 20+ years in the field, this is who I am and why I do this.",
   stats: [
     { value: "20+", label: "Years Chasing" },
     { value: "10+", label: "Years Guiding" },
@@ -192,6 +225,10 @@ export const history = {
   portrait: {
     name: "David Williams",
     title: "Forecaster · Mentor · Storm Chaser",
+    photo: {
+      src: "/images/david-twisters.jpg",
+      alt: "David Williams portrait",
+    },
     blurb: "Self-taught. Battle-tested. Two decades of learning the hard way so you don't have to.",
     creds: [
       { label: "Experience", value: "20+ years chasing" },
@@ -205,6 +242,7 @@ export const history = {
     "I started chasing in the early 2000s, a time before mobile data, smartphones, or the wealth of forecasting tools available today. The road was hard and filled with failures.",
     "As educational weather sites and model data became accessible, I threw myself into the long journey of learning theoretical meteorology and applying it to real-world forecasting. Persistence built into skill. Failure built into success rates that kept climbing.",
     "Without a mentor of my own, I felt the cost of learning alone. That experience is the engine behind everything TAC does, no guest should have to stumble through Tornado Alley without a knowledgeable partner at their side.",
+    "I love chasing severe weather, and I want those who share my passion to have a real opportunity to pursue it. Safety is my highest concern on every chase. I've seen firsthand how quickly the sky can turn on you, and that experience shapes every conservative call I make in the field. We get close to storms, but never at the cost of coming home. This isn't about selling a product. It's about finding my people and putting them in front of the sky.",
   ],
   timeline: [
     {
@@ -246,15 +284,17 @@ export const history = {
 export const expenses = {
   eyebrow: "Transparent Pricing",
   heading: "Expenses & Costs.",
-  lead: "No hidden fees. No inflated tour markups. I charge $150 a day, a fraction of what large operators charge, because the goal is partnership, not profit extraction.",
+  lead: "No hidden fees like tours have. I charge $150 a day plus shared expenses, and everything you'll pay is laid out on this page, up front.",
   rateLabel: "My Daily Rate",
   rateNote:
-    "Per chaser, per day. Payable directly to me. Covers my expertise, vehicle, fuel management, equipment, and 20+ years of experience guiding you safely through the field.",
-  compareBadge: "Competitors charge ~$400/day, TAC is 62% less",
+    "Per chaser, per day, plus shared daily expenses (fuel, hotel, and food, broken down below). Payable directly to me. Covers my expertise, vehicle, equipment, and 20+ years of experience guiding you safely through the field.",
+  accessNote:
+    "I've kept my prices at a level that makes chasing accessible to people who are genuinely passionate about tornadoes and learning meteorology. It's allowed chasers to travel from as far as Europe, created lifelong friendships, and many partners return for repeat seasons.",
   payment: [
     { when: "To Book", what: "$300 deposit, holds your seat in the vehicle" },
     { when: "4 Months Out", what: "50% of total guide fee due" },
     { when: "2 Months Out", what: "Remaining 50% of guide fee due" },
+    { when: "Final Day", what: "Each person's shared expenses due on the final day of the trip" },
   ],
   dailyLead:
     "In addition to my fee, guests split shared daily costs. Expect roughly $100–$130 per day, though this fluctuates with driving distance and hotel location.",
@@ -269,7 +309,6 @@ export const expenses = {
     label: "Estimated Daily Total (all-in)",
     value: "$250–$280",
     note: "Guide fee + daily expenses combined. Costs fluctuate based on driving distance, hotel location, number of chasers, and tolls.",
-    vs: "$400+",
   },
   covered: [
     "My expert guidance every day in the field",
@@ -289,11 +328,6 @@ export const expenses = {
     "Any personal insurance or travel insurance",
     "Medical & emergency expenses",
   ],
-  comparison: {
-    lead: "Large tour operators charge up to $400 per day and put you in a group of 10–15 people. TAC caps at three guests and charges less than half.",
-    tac: { price: "$150", note: "per day · max 3 guests", badges: ["Genuine partnership", "Real instruction"] },
-    others: { price: "~$400", note: "per day · 10–15 passengers", badges: ["Passive tour experience", "Large groups"] },
-  },
 };
 
 // Short quote strip on the homepage (from the local index.html).
@@ -319,6 +353,100 @@ export const homeStrip = [
     origin: "Czech Republic · June 2019",
   },
 ];
+
+// Group photos from past seasons, happy faces in the field.
+export const teamGallery = {
+  eyebrow: "The Team",
+  heading: "One Vehicle. One Crew.",
+  lead: "Chase partners from past seasons, in the field, on the storms. This is what the team looks like when the sky delivers.",
+  photos: [
+    {
+      src: "/images/group-2017-dinner.jpg",
+      alt: "Three chase partners raising their glasses over a backyard rib dinner",
+      caption: "Backyard ribs and a toast with the 2017 crew after a chase week.",
+    },
+    {
+      src: "/images/group-2017-4runner.jpg",
+      alt: "David and a chase partner posing arm in arm in front of the silver 4Runner",
+      caption: "Chase partners and the original Stormtrooper, 2017.",
+    },
+    {
+      src: "/images/group-2018-selfie.jpg",
+      alt: "Three smiling chase partners in a tight selfie at the airport pickup",
+      caption: "Airport pickup selfie: the 2018 team assembles.",
+    },
+    {
+      src: "/images/group-2019-supercell.jpg",
+      alt: "Four chase partners lined up on an empty highway next to the Stormtrooper with a towering supercell behind them",
+      caption: "Posing with a towering supercell after the chase, 2019.",
+    },
+    {
+      src: "/images/group-2019-rockies.jpg",
+      alt: "Four chasers on a snowy Rocky Mountains overlook on a clear day",
+      caption: "Down day in the Rockies with the 2019 crew from the Czech Republic.",
+    },
+    {
+      src: "/images/group-2019-bbq.jpg",
+      alt: "Four chase partners smiling over plates of barbecue at a Texas restaurant",
+      caption: "Refueling on Texas BBQ between chase days, 2019.",
+    },
+    {
+      src: "/images/group-wakita.jpg",
+      alt: "Four chase partners in front of the Wakita water tower in Oklahoma",
+      caption: "Pilgrimage to Wakita, Oklahoma, hometown of the movie Twister.",
+    },
+    {
+      src: "/images/group-dominator.jpg",
+      alt: "Four chase partners standing in front of the armored Dominator 3 chase vehicle",
+      caption: "Crossing paths with the legendary Dominator 3 on the road.",
+    },
+    {
+      src: "/images/group-2022-stormtrooper.jpg",
+      alt: "Chase team selfie in front of the Stormtrooper in a hotel parking lot",
+      caption: "The 2022 crew with the Stormtrooper before rollout.",
+    },
+    {
+      src: "/images/group-2022-cheers.jpg",
+      alt: "Four chase partners raising beer glasses in a wood-paneled booth",
+      caption: "Cheers to a successful intercept, season 2022.",
+    },
+    {
+      src: "/images/group-julia-bob.jpg",
+      alt: "David with chase partners Julia and Bob in front of the Stormtrooper",
+      caption: "With Julia and Bob, chase partners from 2023.",
+    },
+    {
+      src: "/images/group-2024-hotel.jpg",
+      alt: "Four chase partners gathered around the Stormtrooper outside the hotel",
+      caption: "Morning muster in the hotel lot, season 2024.",
+    },
+    {
+      src: "/images/group-tornado-wide.jpg",
+      alt: "Chase partners standing along a country road watching a large tornado with the Stormtrooper parked nearby",
+      caption: "The whole team lined up on a wedge, Stormtrooper close at hand.",
+    },
+    {
+      src: "/images/team-2.jpg",
+      alt: "Four chase partners posing beside the chase vehicle at the hotel before a chase day",
+      caption: "Morning departure from base, another chase day begins.",
+    },
+    {
+      src: "/images/team-4.jpg",
+      alt: "The chase group sharing dinner around a table after a day in the field",
+      caption: "Off the road and around the table: chase family dinner after a day on the plains.",
+    },
+    {
+      src: "/images/team-1.jpg",
+      alt: "Four smiling chase partners posing in front of the Stormtrooper on a residential street",
+      caption: "The crew and the Stormtrooper, loaded up and ready to roll out.",
+    },
+    {
+      src: "/images/team-3.jpg",
+      alt: "Chase team selfie in front of the Stormtrooper on the open plains",
+      caption: "Selfie check on target: crew accounted for, storms inbound.",
+    },
+  ],
+};
 
 export const testimonials = {
   eyebrow: "From Chase Partners",
@@ -353,7 +481,7 @@ export const testimonials = {
     { year: "2016", name: "Rafal", origin: "Australia", quote: "It was great to learn about storm chasing from David with all his experience." },
     { year: "2016", name: "Devin", origin: "California, USA", quote: "I learned more from David in first few hours than months of study." },
     { year: "2015", name: "Chris", origin: "Sweden", quote: "I have been chasing with six different tour operators and I will stick with chasing with David." },
-    { year: "—", name: "James Washburn", origin: "Author", quote: "I felt completely safe despite all variables and activity in the sky." },
+    { year: "more", name: "James Washburn", origin: "Author", quote: "I felt completely safe despite all variables and activity in the sky." },
   ],
 };
 
@@ -408,8 +536,8 @@ export const datesSignUp = {
     "Every trip caps at three guest seats, so spots move fast. Check what's open below, then email me to set up your video interview.",
   capacityNote: "Every group is capped at 3 seats total, per trip.",
   legend: [
+    { key: "open" as const, label: "Available" },
     { key: "booked" as const, label: "Booked" },
-    { key: "open" as const, label: "Open" },
   ],
   tours: [
     {
@@ -462,9 +590,10 @@ export const cta = {
 
 export const footer = {
   tagline: "Teaching and mentoring storm chasers since 2015. You're not a tourist, you're the team.",
-  social: "@TornadoAlleyChasing",
   facebook: "https://www.facebook.com/TornadoAlleyChasing",
-  instagram: "https://www.instagram.com/TornadoAlleyChasing",
+  instagram: "https://www.instagram.com/tornado_alley_chasing/",
+  youtube: "https://www.youtube.com/@tornadoalleychasing9847",
   copyright: "© 2025 Tornado Alley Chasing. All rights reserved.",
   byline: "Led by David Williams · Since 2015",
+  credit: "Site built & designed by Julian, a returning chase partner",
 };
