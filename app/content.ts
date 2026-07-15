@@ -1,7 +1,7 @@
 // Content ported from the local TAC site mirror (D:\PC_Werkmap\tornadoalleychasing,
 // index/chasing-with-me/expenses/chase-history/testimonials/training pages).
 
-export const EMAIL = "TornadoAlleyChasing@gmail.com";
+export const EMAIL = "Info@tornadoalleychasing.com";
 
 // Used by the IntroScrub hero. Keep as is, the flythrough hero must not change.
 export const intro = {
@@ -102,7 +102,7 @@ export const philosophy = {
   howItWorks: [
     {
       title: "Email Me",
-      body: "Reach out at TornadoAlleyChasing@gmail.com. Tell me who you are, your experience level, and what you're hoping to get from a chase season.",
+      body: "Reach out at Info@tornadoalleychasing.com. Tell me who you are, your experience level, and what you're hoping to get from a chase season.",
     },
     {
       title: "Video Interview",
