@@ -14,12 +14,11 @@ export const ticker = [
   "Max 3 Guests Per Trip",
   "20+ Years Field Experience",
   "Chasers from 6 Continents",
-  "Oklahoma Base Camp",
   "All Skill Levels Welcome",
 ];
 
 export const heroIntro = {
-  badge: "Active Since 2015 · Est. Oklahoma",
+  badge: "Mentoring Since 2015 · Est. Oklahoma",
   heading: ["You're Not", "A Tourist.", "You're The Team."],
   body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership not performance. This is your storm too.",
   steps: ["Email Me", "Short video call", "Plan your chase"],
@@ -328,6 +327,19 @@ export const expenses = {
     "Any personal insurance or travel insurance",
     "Medical & emergency expenses",
   ],
+  paymentMethods: {
+    label: "Accepted Payment Methods",
+    note: "I accept all major forms of payment for the guide fee and shared expenses: bank transfer, Venmo, Zelle, credit card, debit card, Apple Pay, and most other electronic wallets.",
+    methods: [
+      "Bank transfer",
+      "Venmo",
+      "Zelle",
+      "Credit card",
+      "Debit card",
+      "Apple Pay",
+      "Most electronic wallets",
+    ],
+  },
 };
 
 // Short quote strip on the homepage (from the local index.html).
@@ -445,6 +457,11 @@ export const teamGallery = {
       alt: "Chase team selfie in front of the Stormtrooper on the open plains",
       caption: "Selfie check on target: crew accounted for, storms inbound.",
     },
+    {
+      src: "/images/group-julian-creator.jpg",
+      alt: "Three chase partners on a snow-capped Rocky Mountains overlook on a clear day",
+      caption: "Post-chase grins with Rick and Julian, a returning chaser who coded this very website.",
+    },
   ],
 };
 
@@ -489,8 +506,8 @@ export const training = {
   eyebrow: "Online · 1-on-1",
   heading: "Meteorology Training.",
   lead: "Can't make it to Tornado Alley yet? I bring the forecasting room to your screen. Personalised, informal, and built around exactly what you want to learn.",
-  price: "$25",
-  priceNote: "per session · 1-on-1 · online",
+  price: "$50",
+  priceNote: "per hour · 1-on-1 · online",
   platforms: ["Zoom", "Google Meet", "Discord"],
   included: [
     "1 hour screen-sharing session",
@@ -508,8 +525,8 @@ export const training = {
     { level: "Beginner", title: "Meteorology Fundamentals", body: "Introduction to weather systems, atmospheric instability, and how severe storms form. No prior knowledge needed." },
     { level: "Beginner–Intermediate", title: "Severe Weather Recognition", body: "Learning to identify supercell characteristics, wall clouds, rotating updrafts, and the visual cues that indicate tornado risk." },
     { level: "Intermediate", title: "Storm Forecasting", body: "Reading SPC outlooks, mesoscale discussions, and model data. Understanding what makes a day worth chasing." },
-    { level: "Intermediate–Advanced", title: "Skew-T Diagrams", body: "Interpreting atmospheric soundings, CAPE, CIN, lifted index, hodographs, and how they translate to tornado potential in the field." },
-    { level: "Advanced", title: "Upper Air Chart Analysis", body: "500mb charts, jet stream positioning, vorticity, and how upper-level dynamics set up surface severe weather patterns." },
+    { level: "Advanced", title: "Skew-T Diagrams", body: "Interpreting atmospheric soundings, CAPE, CIN, lifted index, hodographs, and how they translate to tornado potential in the field." },
+    { level: "Intermediate–Advanced", title: "Upper Air Chart Analysis", body: "500mb charts, jet stream positioning, vorticity, and how upper-level dynamics set up surface severe weather patterns." },
     { level: "All Levels", title: "Your Topics", body: "No fixed agenda required. If you have specific topics you want to cover, from hail forecasting to nowcasting techniques, just bring them." },
   ],
   covers: [
@@ -527,6 +544,17 @@ export const training = {
   ],
   limitationsNote:
     "My strength is in applied, operational severe weather knowledge gained from 20+ years in the field, not academic meteorology.",
+  paymentMethods: {
+    label: "Accepted Payment Methods",
+    note: "Because sessions are online, payment is limited to methods that can be handled remotely: bank transfer, Venmo, Zelle, credit card, and debit card. In-person-only methods like Apple Pay and other electronic wallets aren't available for training.",
+    methods: [
+      "Bank transfer",
+      "Venmo",
+      "Zelle",
+      "Credit card",
+      "Debit card",
+    ],
+  },
 };
 
 export const datesSignUp = {

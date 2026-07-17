@@ -61,6 +61,24 @@ export default function Expenses() {
                       </div>
                     ))}
                   </div>
+                  <div className="mt-8 border-t border-line pt-7">
+                    <div className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-accent">
+                      {expenses.paymentMethods.label}
+                    </div>
+                    <div className="mt-4 flex flex-wrap gap-2.5">
+                      {expenses.paymentMethods.methods.map((m) => (
+                        <span
+                          key={m}
+                          className="inline-flex items-center rounded-full border border-line bg-[var(--bg-deep)] px-3.5 py-[7px] text-[0.8rem] font-semibold text-muted"
+                        >
+                          {m}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="mt-4 text-[0.85rem] leading-[1.65] text-muted">
+                      {expenses.paymentMethods.note}
+                    </p>
+                  </div>
                 </div>
               </div>
             </Reveal>

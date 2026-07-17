@@ -8,7 +8,7 @@ import { EMAIL, training } from "../content";
 export const metadata: Metadata = {
   title: "1-on-1 Training, Tornado Alley Chasing",
   description:
-    "Online meteorology training with me. $25/hour via Zoom. Beginner to advanced storm forecasting, Skew-T, supercells, upper air charts.",
+    "Online meteorology training with me. $50/hour via Zoom. Beginner to advanced storm forecasting, Skew-T, supercells, upper air charts.",
 };
 
 export default function Training() {
@@ -71,6 +71,24 @@ export default function Training() {
                       <li key={c}>{c}</li>
                     ))}
                   </ul>
+                  <div className="mt-7 border-t border-line pt-6">
+                    <div className="mb-3 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-accent">
+                      {training.paymentMethods.label}
+                    </div>
+                    <div className="mb-4 flex flex-wrap gap-2.5">
+                      {training.paymentMethods.methods.map((m) => (
+                        <span
+                          key={m}
+                          className="inline-flex items-center rounded-full border border-line bg-[var(--bg-deep)] px-3.5 py-[7px] text-[0.8rem] font-semibold text-muted"
+                        >
+                          {m}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-[0.82rem] leading-[1.6] text-[var(--txt-3)]">
+                      {training.paymentMethods.note}
+                    </p>
+                  </div>
                   <a
                     href={`mailto:${EMAIL}`}
                     className="btn btn-primary mt-7 w-full justify-center"
@@ -114,8 +132,8 @@ export default function Training() {
                     body: "Log onto Zoom, Google Meet, or Discord. I share my screen and walk you through the material live, with full Q&A throughout.",
                   },
                   {
-                    title: "Pay $25",
-                    body: "A flat $25 per hour, no complex packages, no hidden fees. Book more sessions whenever you're ready to continue learning.",
+                    title: "Pay $50",
+                    body: "A flat $50 per hour, no complex packages, no hidden fees. Book more sessions whenever you're ready to continue learning.",
                   },
                 ].map((s, i) => (
                   <Reveal key={s.title} delay={0.1 + i * 0.06}>
@@ -216,7 +234,7 @@ export default function Training() {
       <div className="s-divider" />
 
       <CtaSection
-        eyebrow="$25 · One Hour · Online"
+        eyebrow="$50 · One Hour · Online"
         line1="Ready to Level"
         accent="Up Your Forecasting?"
         body="Email me to schedule your first session. Tell me where you're starting from and what you want to know."
