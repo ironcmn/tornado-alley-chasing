@@ -20,7 +20,7 @@ export const ticker = [
 export const heroIntro = {
   badge: "Mentoring Since 2015 · Est. Oklahoma",
   heading: ["You're Not", "A Tourist.", "You're The Team."],
-  body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership not performance. This is your storm too.",
+  body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership. This is your storm too.",
   steps: ["Email Me", "Short video call", "Plan your chase"],
   stats: [
     { value: "20+", label: "Years Chasing" },
@@ -241,7 +241,7 @@ export const history = {
     "I started chasing in the early 2000s, a time before mobile data, smartphones, or the wealth of forecasting tools available today. The road was hard and filled with failures.",
     "As educational weather sites and model data became accessible, I threw myself into the long journey of learning theoretical meteorology and applying it to real-world forecasting. Persistence built into skill. Failure built into success rates that kept climbing.",
     "Without a mentor of my own, I felt the cost of learning alone. That experience is the engine behind everything TAC does, no guest should have to stumble through Tornado Alley without a knowledgeable partner at their side.",
-    "I love chasing severe weather, and I want those who share my passion to have a real opportunity to pursue it. Safety is my highest concern on every chase. I've seen firsthand how quickly the sky can turn on you, and that experience shapes every conservative call I make in the field. We get close to storms, but never at the cost of coming home. This isn't about selling a product. It's about finding my people and putting them in front of the sky.",
+    "I love chasing severe weather, and I want those who share my passion to have a real opportunity to pursue it. Safety is my highest concern on every chase. I've seen firsthand how quickly the sky can turn on you, and that experience shapes every conservative call I make in the field. We get close to storms, but never at the cost of coming home. This isn't about selling a product. It's about finding my people and putting them in front of the storm.",
   ],
   timeline: [
     {
