@@ -1,14 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/chase-history",
-        destination: "/about-me",
-        permanent: true,
-      },
-    ];
+  output: "export",
+  trailingSlash: true,
+  distDir: ".next-build",
+  images: {
+    unoptimized: true,
   },
 };
 

@@ -621,7 +621,7 @@ export const footer = {
   facebook: "https://www.facebook.com/TornadoAlleyChasing",
   instagram: "https://www.instagram.com/tornado_alley_chasing/",
   youtube: "https://www.youtube.com/@tornadoalleychasing9847",
-  copyright: "© 2025 Tornado Alley Chasing. All rights reserved.",
+  copyright: "© 2026 Tornado Alley Chasing. All rights reserved.",
   byline: "Led by David Williams · Since 2015",
   credit: "Site built & designed by Julian, a returning chase partner",
 };
