@@ -20,7 +20,7 @@ export const ticker = [
 export const heroIntro = {
   badge: "Mentoring Since 2015 · Est. Oklahoma",
   heading: ["You're Not", "A Tourist.", "You're The Team."],
-  body: "Chase real tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership. This is your storm too.",
+  body: "Learn how to forecast and chase tornadoes alongside me, 20+ years of experience, maximum three guests, and a philosophy built on partnership. This is your storm too.",
   steps: ["Email Me", "Short video call", "Plan your chase"],
   stats: [
     { value: "20+", label: "Years Chasing" },
