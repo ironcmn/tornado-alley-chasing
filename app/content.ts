@@ -201,12 +201,12 @@ export const vehicle = {
     {
       src: "/images/stormtrooper-4runner.jpg",
       alt: "The Stormtrooper, a lifted white 4Runner, parked roadside with a tornado in the distance",
-      caption: "The Stormtrooper on an intercept, tornado on the ground ahead.",
+      caption: "The current Stormtrooper, the vehicle in use today, on an intercept with a tornado on the ground ahead.",
     },
     {
       src: "/images/stormtrooper.jpg",
       alt: "The TAC chase vehicle parked on a dirt road watching a distant cone tornado",
-      caption: "Hail shields mounted, radar running, cone tornado in view.",
+      caption: "The retired Stormtrooper: hail shields mounted, radar running, cone tornado in view.",
     },
   ],
 };
@@ -515,7 +515,7 @@ export const training = {
     "Choose your own weather topics of interest",
     "Structured lesson format available if preferred",
     "Informal atmosphere with comprehensive learning",
-    "Severe weather forecasting specialisation",
+    "Severe weather forecasting specialization",
   ],
   aboutParagraphs: [
     "My 1-on-1 training sessions are informal, focused, and delivered via live screen-sharing. Whether you're brand new to meteorology or looking to push your forecasting to the next level, sessions are shaped entirely around you.",
@@ -573,7 +573,7 @@ export const datesSignUp = {
       title: "Southern Plains Supercells",
       note: "Focus: supercells paired with tornado potential",
       seatsTotal: 3,
-      seatsBooked: 1,
+      seatsBooked: 2,
     },
     {
       dateRange: "May 12 – 26, 2027",
@@ -601,7 +601,7 @@ export const chaseLogs = {
   eyebrow: "The Full Record",
   heading: "Chase Logs.",
   lead:
-    "Every documented chase day since 2016, straight from the field notebook. Browse by season to see what the sky actually did.",
+    "A representation of a few seasons chasing since 2016, straight from the field notebook. Browse by season to see what the sky actually did.",
   stats: [
     { value: "88", label: "Chase Days Logged" },
     { value: "33", label: "Tornado Days" },

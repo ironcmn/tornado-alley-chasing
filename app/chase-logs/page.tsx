@@ -9,7 +9,7 @@ import { chaseLogYears } from "../chaseLogsEntries";
 export const metadata: Metadata = {
   title: "Chase Logs, Tornado Alley Chasing",
   description:
-    "Every documented storm chase day since 2016, browsable by season, with the real field notes and photos from each intercept.",
+    "A representation of a few seasons storm chasing since 2016, browsable by season, with the real field notes and photos from each intercept.",
 };
 
 function tagClass(tag: string) {
